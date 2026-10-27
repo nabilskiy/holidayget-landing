@@ -7,6 +7,7 @@ import {
   Calendar,
   Star,
 } from "lucide-react";
+import { BookingWidget } from "../components/BookingWidget";
 
 export function Home() {
   const destinations = [
@@ -59,12 +60,15 @@ export function Home() {
                 A glimpse of our mobile application interface
                 currently in development.
               </p>
-              <a
-                href="mailto:galitholidayget@gmail.com?subject=Inquiry%20about%20HolidayGet%20Platform"
-                className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
-              >
-                Contact Us
-              </a>
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                <a
+                  href="mailto:galitholidayget@gmail.com?subject=Inquiry%20about%20HolidayGet%20Platform"
+                  className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
+                >
+                  Contact Us
+                </a>
+                <BookingWidget />
+              </div>
             </div>
 
             {/* Right side - App Screenshot */}
@@ -252,12 +256,15 @@ export function Home() {
               Have questions about our platform? We'd love to
               hear from you.
             </p>
-            <a
-              href="mailto:galitholidayget@gmail.com?subject=Inquiry%20about%20HolidayGet%20Platform"
-              className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
-            >
-              Contact Us
-            </a>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <a
+                href="mailto:galitholidayget@gmail.com?subject=Inquiry%20about%20HolidayGet%20Platform"
+                className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
+              >
+                Contact Us
+              </a>
+              <BookingWidget />
+            </div>
           </div>
         </div>
       </section>
